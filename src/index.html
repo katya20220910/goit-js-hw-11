@@ -8,7 +8,8 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <form class="search-form" id="search-form">
+    <div class="wrapper">
+      <form class="search-form" id="search-form">
       <input
         type="text"
         name="searchQuery"
@@ -17,7 +18,10 @@
       />
       <button type="submit">Search</button>
     </form>
+    </div>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+        <div class="gallery"></div>
+        <button type="button" class="load-more is-hidden">Load more</button>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
